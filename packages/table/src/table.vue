@@ -264,7 +264,7 @@
         type: Boolean,
         default: false
       },
-      tableInfiniteDistance:{
+      tableInfiniteDistance: {
         type: Number,
         default: 0
       },
