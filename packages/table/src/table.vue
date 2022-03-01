@@ -39,9 +39,9 @@
       style="overflow-y:auto"
       v-infinite-scroll="tableInfiniteScroll"
       :infinite-scroll-distance="tableInfiniteDistance"
-      :infinite-scroll-immediate="true"
-      :infinite-scroll-disabled="infiniteScrollDisabled"
-      infinite-scroll-delay="infiniteScrollDelay"
+      :infinite-scroll-immediate="tableInfiniteImmediate"
+      :infinite-scroll-disabled="tableInfiniteScrollDisabled"
+      :infinite-scroll-delay="tableInfiniteScrollDelay"
       >
       <table-body
         :context="context"
@@ -256,11 +256,11 @@
         }
       },
       tableInfiniteScroll: Function,
-      infiniteScrollImmediate: {
+      tableInfiniteImmediate: {
         type: Boolean,
         default: true
       },
-      infiniteScrollDisabled: {
+      tableInfiniteScrollDisabled: {
         type: Boolean,
         default: false
       },
@@ -268,7 +268,7 @@
         type: Number,
         default: 0
       },
-      infiniteScrollDelay: {
+      tableInfiniteScrollDelay: {
         type: Number,
         default: 200
       },
